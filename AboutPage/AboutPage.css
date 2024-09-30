@@ -1,6 +1,6 @@
 /* Header styles */
 header {
-    background-color: #4CAF50; /* Change this color if needed */
+    background-color: #4CAF50;
     color: white;
     padding: 20px;
     text-align: left;
@@ -12,14 +12,17 @@ h1 {
 }
 
 body {
-background-color: rgb(192, 117, 41);
+    background-color: rgb(192, 117, 41);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 /* Navbar styles */
 #navbar {
     overflow: hidden;
-    background-color: #333; /* Change this color if needed */
-    border-bottom: solid 15px #4CAF50; /* Change the border color if needed */
+    background-color: #333;
+    border-bottom: solid 15px #4CAF50;
 }
 
 #navbar a {
@@ -27,8 +30,9 @@ background-color: rgb(192, 117, 41);
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 18px;
     text-decoration: none;
+    width: 100px;
 }
 
 #navbar a:hover {
@@ -36,26 +40,57 @@ background-color: rgb(192, 117, 41);
     color: black;
 }
 
+/* Main content styles */
+#about-content {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center; /* Center the text content */
+}
+
+/* Image and gallery item */
+.gallery-item figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border: 10px solid white; /* 10px white border for images */
+}
+
+figcaption {
+    color: white;
+    font-weight: bold; /* Make caption text bold */
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Text styles - making paragraphs bold */
+p {
+    font-weight: bold;
+}
+
+/* Footer styles */
 footer {
-    background-color: #4CAF50; /* Same color as the header */
-    position: absolute;
-    bottom: 10;
-    width: 200%;
+    background-color: #4CAF50;
+    text-align: right;
+    padding: 10px 30px;
+    width: 100%;
+    position: relative;
 }
 
 footer p {
     color: white;
     font-weight: 400;
-    float: right;
-    padding-right: 30px;
     font-style: italic;
 }
 
 footer a {
     color: white;
     text-decoration: none;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 footer a:hover {
